@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+body{
+    background:url("bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#board{
+    background: linear-gradient(rgb(55, 76, 55),rgb(76, 76, 45));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns:repeat(18,1fr) ;/*18 colums ki grid bannana*/
+    grid-template-rows: repeat(18,1fr);/*18 rows kip grid bannana*/
+
+}
+.head{
+    background:linear-gradient(maroon,rgb(222, 222, 127));
+    border:2px solid rgb(7, 7, 7);
+    border-radius: 30%;
+    transform: scale(1.02);
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid rgb(10, 10, 10);
+    border-radius: 50%;
+}
+.food{
+    background: linear-gradient(cyan,pink);
+    border:.25vmin solid rgb(246, 240, 240);
+    border-radius: 50%;
+    
+}
+
+#scoreBox{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#hscorebox{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top:50rem;
+    right:400px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.index2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+   
+}
+
+  
+.btn{
+
+    padding: 35px;
+    border-radius: 7px;
+    border-style: none;
+    background:linear-gradient(rgb(128, 128, 213),white,rgb(187, 86, 86));
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    cursor: pointer;
+}
+.btn:hover{
+    background:linear-gradient(rgb(187, 86, 86),white,rgb(128, 128, 213));
+    transition: all ease 300ms;
+    
+}
